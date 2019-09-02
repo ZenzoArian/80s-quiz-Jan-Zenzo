@@ -1,0 +1,39 @@
+body{
+  /* background-image: url(image/background.jpg); */
+  background-color: #222222;
+  color: white;
+}
+
+h1{
+  text-align: center;
+}
+
+img{
+  opacity: 0;
+  width: 100%;
+  transition: 1s ease;
+}
+
+.img-div:hover img{
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.img-div{
+  width: 5em;
+  height: 5em;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+
+.all-Q{
+  opacity: 0;
+  transition: 1s ease;
+}
+
+
+.img-div:hover + .all-Q{
+  opacity: 1;
+  transition: .5s ease;
+}
