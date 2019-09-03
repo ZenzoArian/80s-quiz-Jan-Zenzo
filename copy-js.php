@@ -3,8 +3,8 @@ $scriptAantal = 1;
 
 for ($S = 1; $S <= 10; $S++) {
     if ($S == 1) {
-      echo '<script>function answer() {';
-        echo 'console.log(vraag);';
+      echo '<script>function control() {';
+        // echo 'console.log(vraag);';
       }
 
       echo '

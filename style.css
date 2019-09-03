@@ -1,39 +1,98 @@
-body{
-  /* background-image: url(image/background.jpg); */
-  background-color: #222222;
-  color: white;
+html{
+  font-family: 'Audiowide', cursive;
+  background-image: url(image/backgroundGame.jpg);
+  background-size: cover;
 }
 
-h1{
+body {
+  /* background-image: url(image/background.jpg); */
+  /* background-color: #222222; */
+  color: white;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Chrome and Opera */
+}
+
+h1 {
   text-align: center;
 }
 
-img{
+img {
   opacity: 0;
   width: 100%;
   transition: 1s ease;
 }
 
-.img-div:hover img{
+.img-div:hover img {
   opacity: 1;
   transition: .5s ease;
 }
 
-.img-div{
+.img-div {
   width: 5em;
   height: 5em;
   border-radius: 100%;
   cursor: pointer;
 }
 
-
-.all-Q{
+.all-Q {
   opacity: 0;
   transition: 1s ease;
+  margin-left: -6em;
+}
+
+.img-div:hover+.all-Q {
+  opacity: 1;
+  transition: .5s ease;
 }
 
 
-.img-div:hover + .all-Q{
-  opacity: 1;
-  transition: .5s ease;
+.intro-container{
+  width: 100%;
+  background-image: url(image/headerBackground.jpg);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30em;
+  margin-bottom: 30em;
+}
+
+.intro-header{
+  font-size: 6em;
+}
+
+.expText{
+  font-size: 3em;
+}
+
+.startButton{
+  margin: 0 auto;
+  padding-top: 8px;
+  width: 6em;
+  height: 1.5em;
+  border-radius: 20px;
+  border: white solid 3px;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.startButton:hover{
+  width: 6.5em;
+  height: 1.6em;
+  font-size: 2.2em;
+}
+
+iframe{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 4em;
 }
